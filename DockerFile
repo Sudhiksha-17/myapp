@@ -1,0 +1,8 @@
+# Use the latest Alpine image
+FROM alpine:latest
+
+# Set an environment variable APP_ENV
+ENV APP_ENV=development
+
+# Default command that will run when the container starts
+CMD echo "Hello from $(echo $APP_ENV)!"
